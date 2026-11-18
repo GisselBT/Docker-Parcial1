@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aves de Colombia</title>
+<style>
+:root{--bg:#e8eee9;--ink:#14231b;--green:#1f3d2b;--accent:#e8590c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+header{background:var(--green);color:#fff;padding:3rem 1.5rem 2.5rem}
+header div,main{max-width:1000px;margin:0 auto}
+h1{font-size:clamp(2.4rem,7vw,4.5rem);line-height:1;margin:0 0 .75rem;letter-spacing:-.02em}
+header p{max-width:52ch;margin:0;color:#cfe0d5}
+main{padding:2.5rem 1.5rem 3rem;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+figure{margin:0;background:#fff;border-radius:6px;overflow:hidden}
+figure:first-child{grid-column:1/-1}
+img{display:block;width:100%;height:auto}
+figcaption{padding:1rem 1.25rem 1.25rem}
+h2{margin:0 0 .25rem;font-size:1.3rem}
+p{margin:0}
+footer{padding:1.5rem;text-align:center;font-size:.9rem;color:#4a5d51}
+a{color:var(--accent)} a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style></head><body>
+<header><div><h1>Aves de Colombia</h1>
+<p>Colombia es el país con más especies de aves del mundo. Tres de ellas, servidas desde un contenedor Docker.</p></div></header>
+<main>
+<figure><img src="images/gallito.svg" alt="Gallito de roca andino"><figcaption><h2>Gallito de roca andino</h2><p>Ave nacional de Perú y habitante de los bosques de niebla andinos colombianos. Los machos se reúnen en leks para exhibirse.</p></figcaption></figure>
+<figure><img src="images/colibri.svg" alt="Colibrí"><figcaption><h2>Colibrí</h2><p>Puede batir sus alas más de 50 veces por segundo y es clave en la polinización.</p></figcaption></figure>
+<figure><img src="images/tucan.svg" alt="Tucán"><figcaption><h2>Tucán</h2><p>Su pico grande regula la temperatura corporal y le ayuda a alcanzar frutos lejanos.</p></figcaption></figure>
+</main>
+<footer>Servido por Nginx dentro de un contenedor Docker.</footer>
+</body></html>
